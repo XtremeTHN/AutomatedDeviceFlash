@@ -9,28 +9,45 @@
 </head>
 
 <body>
+
     <div class="grid-container">
-        <button class="grid-button">
+        <button id="profile_btt" class="grid-button" onclick="account_page()">
             <img src="../public/images/icon-account-bold.png" alt="profile">
             Profile
         </button>
-        <button class="grid-button">
+        <button id="search_btt" class="grid-button" onclick="search_page()">
             <img src="../public/images/icon-magnifying-glass-bold.png" alt="search">
             Search
         </button>
-        <button class="grid-button">
+        <button id="all_btt" class="grid-button" onclick="all_page()">
             <img src="../public/images/icon-list.png" alt="all">
             All
         </button>
-        <button class="grid-button">
+        <button id="devices_btt" class="grid-button" onclick="devices_page()">
             <img src="../public/images/icon-phone-thin.png" alt="devices">
             Devices
         </button>
-        <button class="grid-button">
+        <button id="settings_btt" class="grid-button" onclick="settings_page()">
             <img src="../public/images/icon-gear.png" alt="settings">
             Settings
         </button>
     </div>
 
+    <div id="profile_page" class="profile-grid">
+        <div class="profile-data">
+            <div class="profile-photo">
+                <img src="../public/images/icon-account-bold.png" alt="profile image">
+            </div>
+        </div>
+    </div>
     
+    <script>
+        var profile_btt = document.getElementById("profile_btt");
+
+        profile_btt.addEventListener("click", function() {
+            var profile_grid = document.getElementById("profile_page");
+            console.log("Showed profile grid")
+            profile_grid.style.display = "flex";
+        })
+    </script>
 </body>

@@ -45,7 +45,7 @@ body {
     background-color: #45475A;
     box-shadow: 4px 6px 4px 0px rgba(0, 0, 0, 0.25);
 
-    transition: all 0.3s;
+    transition: border-color 0.3s, background-color 0.2s;
 }
 
 
@@ -53,8 +53,30 @@ body {
     border-color: #89B4FA;
 }
 
+.grid-button:active {
+    background-color: #1e1e2e;
+}
+
 .grid-button img {
-    padding: 3px;
+    padding: 5px;
+}
+
+.profile-grid {
+    display: none;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    left: 660px;
+    top: 40px;
+    background-color: #fff; /* Color de fondo predeterminado antes de obtener el color predominante */
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
