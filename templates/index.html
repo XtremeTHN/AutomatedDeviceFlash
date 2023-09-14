@@ -45,9 +45,15 @@
         var profile_btt = document.getElementById("profile_btt");
 
         profile_btt.addEventListener("click", function() {
-            var profile_grid = document.getElementById("profile_page");
+            var profile_grid = document.getElementById("profile_page")
+
+            var screenWidth = window.innerWidth
+            var screenHeight = window.innerHeight
+            var middleX = screenWidth / 2
+            var middleY = screenHeight / 2
+            
             console.log("Showed profile grid")
-            profile_grid.style.display = "flex";
+            profile_grid.style.display = "flex"
         })
     </script>
 </body>

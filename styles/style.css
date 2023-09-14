@@ -62,15 +62,15 @@ body {
 }
 
 .profile-grid {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 5%;
 }
 
 .profile-photo {
     width: 150px;
     height: 150px;
-    position: fixed;
-    left: 660px;
-    top: 40px;
     background-color: #fff; /* Color de fondo predeterminado antes de obtener el color predominante */
     border-radius: 50%;
     overflow: hidden;
