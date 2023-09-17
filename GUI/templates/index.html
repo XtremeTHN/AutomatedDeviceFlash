@@ -6,10 +6,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/style.css">
+
+    <div class="head-background">
+        <p>Automated Device Flash</p>
+        <div class="head-buttons">
+            <button class="close-btt" onclick="close_window()">
+                <img src="../public/images/icon-close.png" alt="close">
+            </button>
+            <button class="minimize-btt" onclick="minimize_window()">
+                <img src="../public/images/icon-minimize.png" alt="minimize">
+            </button>
+        </div>
+    </div>
 </head>
 
 <body>
-
+    
     <div class="grid-container">
         <button id="profile_btt" class="grid-button" onclick="account_page()">
             <img src="../public/images/icon-account-bold.png" alt="profile">
@@ -33,27 +45,9 @@
         </button>
     </div>
 
-    <div id="profile_page" class="profile-grid">
-        <div class="profile-data">
-            <div class="profile-photo">
-                <img src="../public/images/icon-account-bold.png" alt="profile image">
-            </div>
-        </div>
+    <div id="current_page">
+        <!-- Content in the corresponsive file in templates folder -->
     </div>
     
-    <script>
-        var profile_btt = document.getElementById("profile_btt");
-
-        profile_btt.addEventListener("click", function() {
-            var profile_grid = document.getElementById("profile_page")
-
-            var screenWidth = window.innerWidth
-            var screenHeight = window.innerHeight
-            var middleX = screenWidth / 2
-            var middleY = screenHeight / 2
-            
-            console.log("Showed profile grid")
-            profile_grid.style.display = "flex"
-        })
-    </script>
+    <script src="../scripts/main.js"></script>
 </body>
