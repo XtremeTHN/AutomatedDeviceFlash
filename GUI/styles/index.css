@@ -1,0 +1,50 @@
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font: 'Montserrat'; */
+    color: var(--ctp-mocha-text);
+    background-color: var(--ctp-mocha-crust);
+}
+
+.left-dash {
+  display: flex;
+  flex-direction: column;
+
+  width: 318px;
+  height: 800px;
+  flex-shrink: 0;
+  
+  background: var(--ctp-mocha-crust);
+  border-right: 1px solid var(--ctp-mocha-surface0);
+}
+
+.top-logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-logo-box img {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.top-logo-box h1 {
+  color: var(--ctp-mocha-text);
+  font: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.line {
+  position: relative;
+  border-bottom: 2px solid var(--ctp-mocha-surface0);
+  width: 250px;
+  height: 2px;
+  top: 169px;
+  left: 31px;
+}

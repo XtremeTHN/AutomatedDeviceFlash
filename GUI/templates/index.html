@@ -1,59 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../styles/style.css">
-
-    <div class="head-background">
-        <p>Automated Device Flash</p>
-        <div id="search-bar" class="search-bar">
-            <img src="../public/images/icon_search_thin.png" alt="search">
-            <input class="search-bar-input" onchange="toggleNullText()" id="search-bar" type="search" placeholder="Search">
-        </div>
-        <div class="head-buttons">
-            <button class="close-btt" onclick="close_window()">
-                <img src="../public/images/icon-close.png" alt="close">
-            </button>
-            <button class="minimize-btt" onclick="minimize_window()">
-                <img src="../public/images/icon-minimize.png" alt="minimize">
-            </button>
-        </div>
-    </div>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../styles/index.css"/>
 </head>
 
 <body>
-    
-    <div class="grid-container">
-        <button id="profile_btt" class="grid-button" onclick="account_page()">
-            <img src="../public/images/icon-account-bold.png" alt="profile">
-            Profile
-        </button>
-        <button id="search_btt" class="grid-button" onclick="search_page()">
-            <img src="../public/images/icon-magnifying-glass-bold.png" alt="search">
-            Search
-        </button>
-        <button id="all_btt" class="grid-button" onclick="all_page()">
-            <img src="../public/images/icon-list.png" alt="all">
-            Categories
-        </button>
-        <button id="devices_btt" class="grid-button" onclick="devices_page()">
-            <img src="../public/images/icon-phone-thin.png" alt="devices">
-            Device
-        </button>
-        <button id="settings_btt" class="grid-button" onclick="settings_page()">
-            <img src="../public/images/icon-gear.png" alt="settings">
-            Settings
-        </button>
+    <div class="left-dash">
+        <div class="top-logo-box">
+            <h1>Automated Device Flash</h1>
+            <img src="../public/images/logo.png">
+        </div>
+        <div class="button-box">
+            <div class="line"></div>
+
+            <div class="line"></div>
+        </div>
+        <div class="credits-box">
+        
+        </div>
     </div>
 
-    <div id="current_page">
-        <!-- Content in the corresponsive file in templates folder -->
+    <div class="frame">
+            
     </div>
-    
-    <script src="../scripts/main.js"></script>
 </body>
-
-<a href="https://www.flaticon.com/free-icons/automatic" title="automatic icons">Automatic icons created by Freepik - Flaticon</a>
