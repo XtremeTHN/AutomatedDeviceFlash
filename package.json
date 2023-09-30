@@ -24,5 +24,9 @@
   "homepage": "https://github.com/XtremeTHN/AutomatedDeviceFlash#readme",
   "devDependencies": {
     "electron": "^26.2.1"
+  },
+  "dependencies": {
+    "@devicefarmer/adbkit": "^3.2.5",
+    "android-fastboot": "^1.1.3"
   }
 }

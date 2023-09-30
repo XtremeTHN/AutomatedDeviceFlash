@@ -146,7 +146,7 @@ body {
 
 .psd-frame {
     height: auto;
-    width: auto;
+    width: 200px;
     background-color: var(--ctp-mocha-surface1);
     border-radius: 8px;
 
@@ -157,4 +157,50 @@ body {
     padding: 10px;
 
     display: flex;
+}
+
+.search-bar {
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar img {
+    width: 10%;
+    height: 10%;
+}
+
+.search-bar-input {
+    background-color: transparent;
+    margin-left: 7px;
+    width: 250px;
+    color: var(--ctp-mocha-text);
+    border: none;
+}
+
+.search-bar-input:focus {
+    border: none;
+    border-bottom: 2px solid var(--ctp-mocha-blue);
+    outline: none;
+
+}
+
+.search-null-text {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    left: 43%;
+    top: 45%;
+
+    transition: all 0.5s;
+}
+
+.search-null-text.horizTranslate {
+    transform: translateX(200%);
+}
+.search-null-text.horizTranslateReverse {
+    transform: translateX(-200%);
 }

@@ -9,6 +9,10 @@
 
     <div class="head-background">
         <p>Automated Device Flash</p>
+        <div id="search-bar" class="search-bar">
+            <img src="../public/images/icon_search_thin.png" alt="search">
+            <input class="search-bar-input" onchange="toggleNullText()" id="search-bar" type="search" placeholder="Search">
+        </div>
         <div class="head-buttons">
             <button class="close-btt" onclick="close_window()">
                 <img src="../public/images/icon-close.png" alt="close">
@@ -33,11 +37,11 @@
         </button>
         <button id="all_btt" class="grid-button" onclick="all_page()">
             <img src="../public/images/icon-list.png" alt="all">
-            All
+            Categories
         </button>
         <button id="devices_btt" class="grid-button" onclick="devices_page()">
             <img src="../public/images/icon-phone-thin.png" alt="devices">
-            Devices
+            Device
         </button>
         <button id="settings_btt" class="grid-button" onclick="settings_page()">
             <img src="../public/images/icon-gear.png" alt="settings">
@@ -51,3 +55,5 @@
     
     <script src="../scripts/main.js"></script>
 </body>
+
+<a href="https://www.flaticon.com/free-icons/automatic" title="automatic icons">Automatic icons created by Freepik - Flaticon</a>
