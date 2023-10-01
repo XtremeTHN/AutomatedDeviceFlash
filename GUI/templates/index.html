@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="stylesheet" href="../styles/index.css"/>
+    <script src="../scripts/index.js"></script>
 </head>
 
 <body>
@@ -9,13 +10,45 @@
             <h1>Automated Device Flash</h1>
             <img src="../public/images/logo.png">
         </div>
-        <div class="button-box">
-            <div class="line"></div>
 
-            <div class="line"></div>
+        <div class="line"></div>
+        <div class="button-box">
+            <button id="profile_btt" onclick="profile_page()" class="button">
+                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.085 27.3738C12.0637 27.3738 8.50896 25.3367 6.434 22.281C6.48225 19.098 12.868 17.3473 16.085 17.3473C19.302 17.3473 25.6877 19.098 25.736 22.281C23.661 25.3367 20.1062 27.3738 16.085 27.3738ZM16.085 4.7745C17.3648 4.7745 18.5922 5.27753 19.4971 6.17292C20.4021 7.06831 20.9105 8.28272 20.9105 9.549C20.9105 10.8153 20.4021 12.0297 19.4971 12.9251C18.5922 13.8205 17.3648 14.3235 16.085 14.3235C14.8052 14.3235 13.5778 13.8205 12.6729 12.9251C11.7679 12.0297 11.2595 10.8153 11.2595 9.549C11.2595 8.28272 11.7679 7.06831 12.6729 6.17292C13.5778 5.27753 14.8052 4.7745 16.085 4.7745ZM16.085 0C13.9727 0 11.8811 0.411654 9.92954 1.21146C7.97801 2.01126 6.20482 3.18355 4.71119 4.6614C1.69466 7.64604 0 11.6941 0 15.915C0 20.1359 1.69466 24.184 4.71119 27.1686C6.20482 28.6465 7.97801 29.8187 9.92954 30.6185C11.8811 31.4183 13.9727 31.83 16.085 31.83C20.351 31.83 24.4423 30.1532 27.4588 27.1686C30.4753 24.184 32.17 20.1359 32.17 15.915C32.17 7.11401 24.9317 0 16.085 0Z" fill="white"/>
+                </svg>
+                Profile
+            </button>
+            <button style="top: 293px;" class="button">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.9749 23.9822L23.9072 18.9145L20.0092 17.304C21.3071 15.4583 22.0025 13.2564 22 11C22 4.93455 17.0654 0 11 0C4.93455 0 0 4.93455 0 11C0 17.0654 4.93455 22 11 22C13.276 22.0025 15.4961 21.2952 17.3511 19.9764L18.9574 23.8639L24.0249 28.9319C24.3499 29.2569 24.7358 29.5147 25.1604 29.6906C25.5851 29.8665 26.0402 29.9571 26.4998 29.9571C26.9595 29.9571 27.4146 29.8666 27.8393 29.6907C28.2639 29.5148 28.6498 29.257 28.9748 28.932C29.2998 28.607 29.5576 28.2212 29.7335 27.7966C29.9094 27.3719 30 26.9168 30 26.4571C30 25.9975 29.9095 25.5424 29.7336 25.1177C29.5577 24.6931 29.2999 24.3072 28.9749 23.9822ZM2 11C2 6.03749 6.03749 2 11 2C15.9625 2 20 6.03749 20 11C20 15.9625 15.9625 20 11 20C6.03749 20 2 15.9625 2 11ZM27.5606 27.5177C27.2791 27.7986 26.8976 27.9563 26.4999 27.9563C26.1022 27.9563 25.7208 27.7986 25.4393 27.5177L20.6535 22.7319L19.1601 19.1173L22.7749 20.6106L27.5607 25.3964C27.8416 25.6779 27.9993 26.0594 27.9993 26.4571C27.9993 26.8547 27.8415 27.2362 27.5606 27.5177Z" fill="white"/>
+                </svg>
+                Search
+            </button>
+            <button style="top: 376px; padding-right: 15.7px;" class="cbutton">
+                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 0H0V2.12727H25V0Z" fill="white"/>
+                    <path d="M25 9.57272H0V11.7H25V9.57272Z" fill="white"/>
+                    <path d="M25 19.1455H0V21.2727H25V19.1455Z" fill="white"/>
+                </svg>
+                Categories
+            </button>
+            <button style="top: 459px;" class="button">
+                <img class="icon" src="../public/images/device-icon.svg">
+                Device
+            </button>
+            <button style="top: 542px; padding-right: 37px;" class="button">
+                <img class="icon" src="../public/images/settings-icon.svg">
+                Settings
+            </button>
         </div>
+        <div class="line2"></div>
+
+
         <div class="credits-box">
-        
+            <p>Written by Axel Valles, designed with Figma, icons by IconDuck
+                Automatic icons created by Freepik - Flaticon (logo)
+                Developer contact: nigthmaresans2@gmail.com</p>
         </div>
     </div>
 
